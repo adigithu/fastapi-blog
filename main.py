@@ -4,17 +4,21 @@ from fastapi.staticfiles import StaticFiles
 app=FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates=Jinja2Templates(directory="Templates")
-posts: list[dict]=[
+posts: list[dict] = [
     {
         "id": 1,
         "author": "Aditya J Parida",
-        "title": "FastAPI",
+        "title": "FastAPI is Awesome",
+        "content": "This framework is really easy to use and super fast",
+        "date_posted": "September 20, 2026"
     },
     {
         "id": 2,
         "author": "Pratyush Panda",
-        "title": "Python",
-    },
+        "title": "Python is great for Web Development",
+        "content": "Python is a great language for web development and FastAPI makes it even better",
+        "date_posted": "September 19, 2026"
+    }
 ]
 
 @app.get("/", include_in_schema=False, name="home")
