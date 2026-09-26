@@ -1,0 +1,12 @@
+posts: list[dict]=[
+    {
+        "id": 1,
+        "author": "Aditya J Parida",
+        "title": "FastAPI",
+    },
+    {
+        "id": 1,
+        "author": "Pratyush Panda",
+        "title": "Python",
+    },
+]

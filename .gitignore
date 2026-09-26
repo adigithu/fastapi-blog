@@ -1,8 +1,19 @@
-*
-!.gitignore
-!main.py
+# Environment variables / secrets
 .env
+
+# Virtual environment
 .venv/
+venv/
+env/
+
+# Python cache
 __pycache__/
+*.py[cod]
 .pytest_cache/
-*.pyc
+
+# IDE
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
